@@ -31,15 +31,6 @@ const Layout = () => {
           <FaUser size={24} />
           <span className="text-sm">Home</span>
         </NavLink>
-        <NavLink
-          to="/profile"
-          className={({ isActive }) =>
-            `flex flex-col items-center ${isActive ? "text-yellow-400" : "text-white"}`
-          }
-        >
-          <FaUser size={24} />
-          <span className="text-sm">Profile</span>
-        </NavLink>
 
         <NavLink
           to="/search"
@@ -59,6 +50,15 @@ const Layout = () => {
         >
           <FaBell size={24} />
           <span className="text-sm">Notifications</span>
+        </NavLink>
+        <NavLink
+          to="/profile"
+          className={({ isActive }) =>
+            `flex flex-col items-center ${isActive ? "text-yellow-400" : "text-white"}`
+          }
+        >
+          <FaUser size={24} />
+          <span className="text-sm">Profile</span>
         </NavLink>
       </nav>
     </div>
